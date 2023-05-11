@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
+  root to: "posts#index" #これ忘れたらサーバーがYearになる｡
   get 'posts', to: 'posts#index'
-  get 'posts/new', to: 'posts#new'
   post 'posts', to: 'posts#create'
 end
